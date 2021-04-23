@@ -36,7 +36,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=4081514119');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1652148086');
       });
     }
   </script>
@@ -45,12 +45,19 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
-    <script type="module" src="./firebase-config.js"></script>
 
-    <script type="module">
+    <script>
       // Your web app's Firebase configuration
       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      import { firebaseConfig } from './firebase-config.js';
+      var firebaseConfig = {
+        apiKey: "AIzaSyBTdms3QCnS4UYTBdr9GUXPYjcTn9WfV_4",
+        authDomain: "itp-nft-demo.firebaseapp.com",
+        projectId: "itp-nft-demo",
+        storageBucket: "itp-nft-demo.appspot.com",
+        messagingSenderId: "836091965029",
+        appId: "1:836091965029:web:005bf724353b1377fe608c",
+        measurementId: "G-BXQYQYJHBY"
+      };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
